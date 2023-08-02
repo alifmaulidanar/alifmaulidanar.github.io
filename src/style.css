@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Noto Sans';
-    src: url(../assets/fonts/NotoSans-Regular.ttf);
+  font-family: "Noto Sans";
+  src: url(../assets/fonts/NotoSans-Regular.ttf);
 }
 
 /* * {
@@ -8,13 +8,13 @@
 } */
 
 body {
-    background-color: #2B3035 !important;
-	color: rgba(255, 255, 255, 0.92) !important;
-    font-family: 'Noto Sans';
+  background-color: #2b3035 !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+  font-family: "Noto Sans";
 }
 
 .container {
-	max-width: 65% !important;
+  max-width: 65% !important;
 }
 
 /* .jumbotron {
@@ -23,7 +23,7 @@ body {
 } */
 
 .greeting {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 /* .paragraph1, .paragraph2 {
@@ -35,29 +35,110 @@ body {
 } */
 
 .circle {
-    width: 300px;
-    height: 300px;
-    background-color: #171923;
-    border-radius: 250px;
-    /* margin-top: 36px;
+  width: 300px;
+  height: 300px;
+  background-color: #171923;
+  border-radius: 150px;
+  /* margin-top: 36px;
     margin-left: 155px; */
 }
 
 .profile-pic {
-    width: 300px;
-    height: 300px;
-    border-radius: 250px;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
 }
 
-.about .card, .getintouch .card {
-    width: 100% !important;
+.about .card,
+.getintouch .card {
+  width: 100% !important;
 }
 
 .card {
-    background-color: rgba(18, 21, 29, 0.95) !important;
+  background-color: rgba(18, 21, 29, 0.95) !important;
 }
 
 .footer-icon {
-    width: 22px;
-    height: 22px;
+  width: 22px;
+  height: 22px;
+}
+
+.mobile-conf {
+  display: none !important;
+}
+
+.desktop-conf {
+  display: block !important;
+}
+
+.getintouch form .mobile-conf {
+  display: none !important;
+}
+
+@media only screen and (max-width: 40em) {
+  .container {
+    max-width: 90% !important;
+  }
+
+  .mobile-conf {
+    display: block !important;
+  }
+
+  .desktop-conf {
+    display: none !important;
+  }
+
+  .mobile-conf .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+    background-color: #171923;
+    border-radius: 100px;
+    margin-top: 5rem;
+    /*  margin-left: 155px; */
+  }
+
+  .mobile-conf .paragraph {
+    font-size: 1rem !important;
+    /* text-align: center; */
+  }
+
+  .mobile-conf .greeting {
+    font-size: 2rem !important;
+  }
+
+  .about-divider {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .getintouch form .desktop-conf {
+    display: none !important;
+  }
+
+  .getintouch form .mobile-conf {
+    display: grid !important;
+  }
+
+  footer .personal-rights {
+    font-size: 0.9rem !important;
+  }
+
+  footer .desktop-conf {
+    display: none !important;
+  }
+
+  .credit {
+    padding-top: 1rem;
+  }
+
+  .footer-icon {
+    width: 28px;
+    height: 28px;
+  }
 }

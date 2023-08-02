@@ -59,20 +59,44 @@
 
       <!-- Jumbotron -->
       <div class="row align-items-center min-vh-100 jumbotron">
-        <div class="col-lg-7">
+        <div class="mobile-conf">
+          <aside class="profile">
+            <div class="circle mx-auto">
+              <img
+                class="profile-pic"
+                src="assets/img/profile/alif.jpg"
+                alt="Alif Maulidanar"
+              />
+            </div>
+          </aside>
+        </div>
+        <div class="col-lg-7 desktop-conf">
           <p class="greeting fw-semibold py-3">Hi, my name is Alif!</p>
-          <p class="paragraph1 fs-5 py-3" style="width: 90%">
+          <p class="paragraph fs-5 py-3" style="width: 90%">
             I'm a student who have interest in website and software development,
             especially in backend role and database stuff and also interested in
             cloud computing and desktop app development.
           </p>
-          <p class="paragraph2 fs-5 py-3" style="width: 90%">
+          <p class="paragraph fs-5 py-3" style="width: 90%">
             For now, I'm focusing on advancing my knowledge in JavaScript,
             especially learning some powerful frameworks and libraries, such as
             Express and React.
           </p>
         </div>
-        <div class="col-lg-5">
+        <div class="mobile-conf text-center">
+          <p class="greeting fw-semibold py-3">Hi, my name is Alif!</p>
+          <p class="paragraph fs-5 py-3 mx-auto" style="width: 90%">
+            I'm a student who have interest in website and software development,
+            especially in backend role and database stuff and also interested in
+            cloud computing and desktop app development.
+          </p>
+          <p class="paragraph fs-5 py-3 mx-auto" style="width: 90%">
+            For now, I'm focusing on advancing my knowledge in JavaScript,
+            especially learning some powerful frameworks and libraries, such as
+            Express and React.
+          </p>
+        </div>
+        <div class="col-lg-5 desktop-conf">
           <aside class="profile">
             <div class="circle ms-auto">
               <img
@@ -92,12 +116,12 @@
             <p class="fw-semibold fs-2 text-center">About Me</p>
           </div>
         </div>
-        <div class="row align-items-center">
+        <div class="row align-items-center desktop-conf">
           <div class="col">
             <div class="card text-white mx-auto">
               <div class="card-body mx-4">
                 <p class="card-text">
-                  My is Alif Maulidanar and I live in Jakarta. I'm an
+                  My name is Alif Maulidanar and I live in Jakarta. I'm an
                   undergraduate student majoring in Informatics Engineering at
                   Esa Unggul University and is currently participating in
                   independent study from Kampus Merdeka in Bangkit Academy 2023
@@ -156,6 +180,73 @@
                   </div>
                 </div>
                 <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center mobile-conf">
+          <div class="col">
+            <div class="card text-white mx-auto">
+              <div class="card-body mx-2">
+                <p class="card-text">
+                  My name is Alif Maulidanar and I live in Jakarta. I'm an
+                  undergraduate student majoring in Informatics Engineering at
+                  Esa Unggul University and is currently participating in
+                  independent study from Kampus Merdeka in Bangkit Academy 2023
+                  Cloud Computing Learning Path.
+                </p>
+                <p class="card-text">
+                  Most of the time, I'm just focus on my college matters, like
+                  doing my tasks or exploring knowledge about informatics
+                  related topics. Usually, I joined online courses, learnt from
+                  Youtube, or read documentations to explore plenty of useful
+                  resources. Then, I try to build simple projects to sharpen my
+                  knowledge and problem solving. There is still a lot more for
+                  me to learn and I can't wait to learn and master it!
+                </p>
+                <div class="row mx-5 text-center pt-4">
+                  <div class="col-lg-3">
+                    <p class="fw-bold">Languages</p>
+                    <ul class="list-unstyled">
+                      <li>Javascript (Node.js)</li>
+                      <li>Python</li>
+                      <li>PHP</li>
+                      <li>SQL</li>
+                    </ul>
+                  </div>
+                  <div class="about-divider"></div>
+                  <div class="col-lg-3">
+                    <p class="fw-bold">Frameworks & Library</p>
+                    <ul class="list-unstyled">
+                      <li>Express.js</li>
+                      <li>React.js</li>
+                      <li>Flask</li>
+                      <li>Tkinter</li>
+                      <li>Bootstrap</li>
+                    </ul>
+                  </div>
+                  <div class="about-divider"></div>
+                  <div class="col-lg-3">
+                    <p class="fw-bold">Interests</p>
+                    <ul class="list-unstyled">
+                      <li>Web Development</li>
+                      <li>Backend Role</li>
+                      <li>Database</li>
+                      <li>Desktop App</li>
+                    </ul>
+                  </div>
+                  <div class="about-divider"></div>
+                  <div class="col-lg-3">
+                    <p class="fw-bold">Tools</p>
+                    <ul class="list-unstyled">
+                      <li>Visual Studio Code</li>
+                      <li>Postman</li>
+                      <li>MySQL</li>
+                      <li>Figma</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -344,7 +435,12 @@
                       placeholder="Message"
                     ></textarea>
                   </div>
-                  <div class="mb-3 d-flex justify-content-end">
+                  <div class="mb-3 d-flex justify-content-end desktop-conf">
+                    <button class="btn btn-primary" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                  <div class="mt-6 mb-3 d-grid col-12 mx-auto mobile-conf">
                     <button class="btn btn-primary" type="submit">
                       Submit
                     </button>
@@ -358,9 +454,9 @@
 
       <!-- Footer -->
       <footer class="border-top border-secondary pt-3 mt-5 px-0">
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between desktop-conf">
           <div class="credit">
-            <p class="fs-6">Alif Maulidanar, 2021–present.</p>
+            <p class="fs-6 personal-rights">Alif Maulidanar, 2021–present.</p>
           </div>
           <div>
             <ul class="d-flex gap-3 list-unstyled">
@@ -421,6 +517,73 @@
                 </a>
               </li>
             </ul>
+          </div>
+        </div>
+
+        <div class="mobile-conf">
+          <div>
+            <ul class="d-flex gap-3 list-unstyled justify-content-around">
+              <li>
+                <a
+                  class="github"
+                  href="https://github.com/alifmaulidanar"
+                  target="”_blank”"
+                >
+                  <img
+                    class="footer-icon"
+                    src="assets/img/icons/icons8-github-grey.svg"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="linkedin"
+                  href="https://www.linkedin.com/in/alifmaulidanar/"
+                  target="”_blank”"
+                >
+                  <img
+                    class="footer-icon"
+                    src="assets/img/icons/icons8-linkedin-grey.svg"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="instagram"
+                  href="https://www.instagram.com/alifmaulidnr/"
+                  target="”_blank”"
+                >
+                  <img
+                    class="footer-icon"
+                    src="assets/img/icons/icons8-instagram-grey.svg"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="email"
+                  href="mailto:alifmaulidanr@gmail.com"
+                  target="”_blank”"
+                >
+                  <img
+                    class="footer-icon"
+                    src="assets/img/icons/icons8-mail-25-grey.svg"
+                  />
+                </a>
+              </li>
+              <li>
+                <a class="phone" href="tel:+6285891400132" target="”_blank”">
+                  <img
+                    class="footer-icon"
+                    src="assets/img/icons/icons8-phone-25-grey.svg"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="credit text-center">
+            <p class="fs-6 personal-rights">Alif Maulidanar, 2021–present.</p>
+            <p class="fs-6 personal-rights">East Jakarta, Indonesia.</p>
           </div>
         </div>
       </footer>
